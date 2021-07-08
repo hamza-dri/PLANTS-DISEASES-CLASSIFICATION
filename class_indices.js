@@ -1,0 +1,1 @@
+{"0": "Apple___Apple_scab", "1": "Apple___Black_rot", "2": "Apple___Cedar_apple_rust", "3": "Apple___healthy", "4": "Potato___Early_blight", "5": "Potato___Late_blight", "6": "Potato___healthy", "7": "This is not a plant"}
