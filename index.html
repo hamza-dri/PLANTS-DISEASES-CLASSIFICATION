@@ -127,34 +127,26 @@
                         <h2>Project Learning <em>By Doing</em></h2>
                         <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
                         <div class="file-upload">
-                           <!-- <button  type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>-->
+                            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
 
                             <div class="image-upload-wrap">
-                                <input type="file" name="uploadImage"  class="file-upload-btn" id="uploadImage" accept=".png, .jpg, .jpeg" >
-                                <div class="row">
-                                    <div class="box">
-                                        <!-- Image Box which displays the Uploaded image -->
-                                        <img src="" alt="" id="image" style="width=250px; height=250px">
-                                    </div>
-                            
-                                    <div class="box box-result">
-                                        <!--  Simple div which shows the Model Loading Status  -->
-                                        <div class="init_status"></div>
-                                        <div>
-                                            <h2><span class="pred_class"></span></h2>
-                                            <h6 style="font-size: 20 px;"><span class="remedy_dis"></span></h6>
-                                            
-                                        </div>
-                                        <div class="accuracy">
-                                            <!--  Simple progress bar which indicates the accuracy for the predicted class -->
-                                            <div class="progress" id="progress">
-                                                <div class="inner">
-                                                  
-                                                </div>
-                                              </div>
-                                        </div>
-                                    </div>
-                                </div> 
+                              <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                              <div class="drag-text">
+                                <h3>Drag and drop a file or select add Image</h3>
+                              </div>
+                            </div>
+                            <div class="file-upload-content">
+                              <img class="file-upload-image" src="#" alt="your image" />
+                              <div class="image-title-wrap">
+                                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
                                  
                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/2.0.1/tf.min.js"></script>
                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
@@ -331,7 +323,7 @@
                             </div>
                             <div class="team-text">
                                 <h2>Hamza DRIBINE</h2>
-                                <h4>Web Developer</h4>
+                                <h4>Data Scientist</h4>
                                 <p>
                                     Generalist engineer Student at Ecole Centrale Casablanca
                                 </p>
